@@ -46,9 +46,9 @@ if (args.z) {
         console.log("Longitude must be in range")
     }
 
-    let day = 1
+    let days = 1
     if (args.d) {
-        day = args.d
+        days = args.d
     }
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&hourly=temperature_2m&daily=precipitation_hours&current_weather=true&timezone=' + timezone);
 
