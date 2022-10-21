@@ -59,7 +59,7 @@ const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' 
     } 
    else {
         let result = ""
-        if (data.daily.precipitation_hours[day]> 0) {
+        if (data.daily.precipitation_hours[days]> 0) {
             console.log("You might need your galoshes")
         }
         else {
