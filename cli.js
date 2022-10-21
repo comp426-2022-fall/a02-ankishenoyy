@@ -46,7 +46,7 @@ if (args.z) {
         console.log("Longitude must be in range")
     }
 
-    let days = 2
+    let days = 1
     if (args.d) {
         days = args.d
     }
