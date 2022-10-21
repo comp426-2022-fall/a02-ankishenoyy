@@ -46,7 +46,7 @@ if (args.z) {
         console.log("Longitude must be in range")
     }
 
-    let days = 1
+    let days = 2
     if (args.d) {
         days = args.d
     }
@@ -58,12 +58,11 @@ const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' 
         console.log(data)
     } 
    else {
-        let result = ""
-        if (data.daily.precipitation_hours[days]> 0) {
-            console.log("You might need your galoshes")
+        if (data.daily.precipitation_hours[days]==0) {
+            console.log("You will not need your galoshes ")
         }
         else {
-            console.log("You will not need your galoshes")
+            console.log("You might need your galoshes ")
         }
     if (days == 0) {
         console.log("today.")
