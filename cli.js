@@ -49,6 +49,10 @@ if (args.d) {
     day = args.d
 }
 
+if(args.d == 0){
+    day = 0
+}
+
 if (args.j) {
     console.log(data)
 }
